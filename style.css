@@ -7,6 +7,7 @@
     --text-secondary: #BCBAB7;
     --text-muted: #7B7B7A;
     --border: rgba(68,67,67,0.5);
+    --button: #DC752B;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -62,6 +63,10 @@
     opacity: 0;
     animation: fadeUp 0.7s ease forwards 0.1s;
   }
+  .logo-img {
+    height: 70px;
+    width: auto;
+  }
   .logo-mark { width: 36px; height: 36px; }
   .logo-name {
     font-family: 'Poppins', sans-serif;
@@ -74,7 +79,7 @@
   /* HERO */
   .hero {
     text-align: center;
-    max-width: 560px;
+    max-width: 800px;
     margin-bottom: 56px;
     opacity: 0;
     animation: fadeUp 0.7s ease forwards 0.25s;
@@ -93,7 +98,7 @@
     line-height: 1.75;
     color: var(--text-secondary);
     font-weight: 300;
-    max-width: 450px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -273,10 +278,10 @@
   /* Submit button */
   .submit-btn {
     flex-shrink: 0;
-    background: var(--bg-raised);
+    background: var(--button);
     border: none;
     border-left: 1px solid var(--border);
-    color: var(--text-secondary);
+    color: var(--text-primary);
     font-family: 'DM Sans', sans-serif;
     font-size: 13px;
     font-weight: 500;
@@ -316,7 +321,7 @@
   }
 
   .phone-app-img {
-    max-width: 650px;
+    max-width: 800px;
     width: 100%;
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 60%, rgba(0,0,0,0) 90%);
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 60%, rgba(0,0,0,0) 90%);
@@ -330,10 +335,12 @@
     padding-bottom: 30px;
   }
 
+  /* Mobile */
   @media (max-width: 540px) {
     .hero-desc {
     font-size: 15px;
     line-height: 1.75;
+    max-width: 450px;
     }
     .submit-btn {
       display: none;
@@ -342,10 +349,10 @@
       display: block;
       width: 100%;
       margin-top: 10px;
-      background: var(--bg-raised);
+      background: var(--button);
       border: 1px solid var(--border);
       border-radius: 12px;
-      color: var(--text-secondary);
+      color: var(--text-primary);
       font-family: 'DM Sans', sans-serif;
       font-size: 13px;
       font-weight: 500;
